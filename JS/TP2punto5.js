@@ -1,4 +1,4 @@
-//DECLARAMOS LAS VARIABLES QUE VAMOS A USAR
+
 let resto = 0;
 let letra = "";
 do {
@@ -6,9 +6,9 @@ do {
     if (Number(numero) == numero) {
         numero = Number(numero);
         if (numero >= 0 && numero <= 99999999) {
-            //CALCULAMOS EL RESTO DE DIVIDIR EL NÚMERO ENTRE 23
+            
             resto = numero % 23;
-            //SEGÚN SEA EL RESTO ASIGNAMOS UN VALOR A LA VARIABLE LETRA
+            
             switch (resto) {
                 case 0:
                     letra = "T";
@@ -80,19 +80,19 @@ do {
                     letra = "E";
                     break;
                 default:
-                //SI NO ES UN NÚMERO ENTRE 0 Y 22 MOSTRAMOS UN ERROR
+                
                     alert("Numero erroneo");
             }
         }
-        //MOSTRAMOS MENSAJE CON EL DNI Y LA LETRA OBTENIDA
+        
         alert("Numero: " + numero + ", Letra: " + letra);
     }
-    //SI NO ES UN NÚMERO
+    
     else {
-        //SI SE PULSÓ ACEPTAR SIN PONER UN NÚMERO
+        
         if (numero != undefined) {
             alert(numero + " No es un numero");
         }
     }
-//MIENTRAS NO SE PULSE CANCELAR VUELVE ARRIBA
+
 } while (numero != undefined);
