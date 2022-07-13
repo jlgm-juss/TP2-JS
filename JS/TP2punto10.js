@@ -2,9 +2,9 @@
 let i,j;
 //PEDIMOS POR TECLADO EL NÚMERO DE FILAS
 //Number fuerza a que se introduzca un número
-let filas = Number(prompt("Introduce numero de filas"));
+let filas = parseInt(prompt("Introduce numero de filas"));
 //PEDIMOS EL NÚMERO DE COLUMNAS
-let colum = Number(prompt("Introduce numero de columnas"));
+let colum = parseInt(prompt("Introduce numero de columnas"));
 //MULTIPLICAMOS filas * columnas Y GUARDAMOS EL RESULTADO EN res
 let res = filas * colum;
 //COMENZAMOS A IMPRIMIR LA TABLA
