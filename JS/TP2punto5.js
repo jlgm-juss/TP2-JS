@@ -1,98 +1,86 @@
 
-let resto = 0;
-let letra = "";
-do {
-    let numero = prompt("Introduce tu dni");
-    if (Number(numero) == numero) {
-        numero = Number(numero);
-        if (numero >= 0 && numero <= 99999999) {
-            
-            resto = numero % 23;
-            
-            switch (resto) {
-                case 0:
-                    letra = "T";
-                    break;
-                case 1:
-                    letra = "R";
-                    break;
-                case 2:
-                    letra = "W";
-                    break;
-                case 3:
-                    letra = "A";
-                    break;
-                case 4:
-                    letra = "G";
-                    break;
-                case 5:
-                    letra = "M";
-                    break;
-                case 6:
-                    letra = "Y";
-                    break;
-                case 7:
-                    letra = "F";
-                    break;
-                case 8:
-                    letra = "P";
-                    break;
-                case 9:
-                    letra = "D";
-                    break;
-                case 10:
-                    letra = "X";
-                    break;
-                case 11:
-                    letra = "B";
-                    break;
-                case 12:
-                    letra = "N";
-                    break;
-                case 13:
-                    letra = "J";
-                    break;
-                case 14:
-                    letra = "Z";
-                    break;
-                case 15:
-                    letra = "S";
-                    break;
-                case 16:
-                    letra = "Q";
-                    break;
-                case 17:
-                    letra = "V";
-                    break;
-                case 18:
-                    letra = "H";
-                    break;
-                case 19:
-                    letra = "L";
-                    break;
-                case 20:
-                    letra = "C";
-                    break;
-                case 21:
-                    letra = "K";
-                    break;
-                case 22:
-                    letra = "E";
-                    break;
-                default:
-                
-                    alert("Numero erroneo");
-            }
-        }
-        
-        alert("Numero: " + numero + ", Letra: " + letra);
-    }
+do{
+    let numero = parseInt(prompt('Ingrese su numero de DNI, entre (0 y 999999999)'));
+    console.log(numero);
     
-    else {
-        
-        if (numero != undefined) {
-            alert(numero + " No es un numero");
-        }
+    if (  numero <= 999999999){
+    let resultado = numero % 23
+    console.log(resultado);
+    
+    switch(resultado){
+    case 0:
+        document.write('La letra que corresponde a su DNI es la T, DNI ingresado'+ numero);
+        break;
+        case 1:
+        document.write('La letra que corresponde a su DNI es la R, DNI ingresado'+ numero);
+        break;
+        case 2:
+        document.write('La letra que corresponde a su DNI es la W, DNI ingresado'+ numero);
+        break;
+        case 3:
+        document.write('La letra que corresponde a su DNI es la A, DNI ingresado'+ numero);
+        break;
+        case 4:
+        document.write('La letra que corresponde a su DNI es la G, DNI ingresado'+ numero);
+        break;
+        case 5:
+        document.write('La letra que corresponde a su DNI es la M, DNI ingresado'+ numero);
+        break;
+        case 6:
+        document.write('La letra que corresponde a su DNI es la Y, DNI ingresado'+ numero);
+        break;
+        case 7:
+        document.write('La letra que corresponde a su DNI es la F, DNI ingresado'+ numero);
+        break;
+        case 8:
+        document.write('La letra que corresponde a su DNI es la P, DNI ingresado'+ numero);
+        break;
+        case 9:
+        document.write('La letra que corresponde a su DNI es la D, DNI ingresado'+ numero);
+        break;
+        case 10:
+        document.write('La letra que corresponde a su DNI es la X, DNI ingresado'+ numero);
+        break;
+        case 11:
+        document.write('La letra que corresponde a su DNI es la B, DNI ingresado'+ numero);
+        break;
+        case 12:
+        document.write('La letra que corresponde a su DNI es la N, DNI ingresado'+ numero);
+        break;
+        case 13:
+        document.write('La letra que corresponde a su DNI es la J, DNI ingresado'+ numero);
+        break;
+        case 14:
+        document.write('La letra que corresponde a su DNI es la Z, DNI ingresado'+ numero);
+        break;
+        case 15:
+        document.write('La letra que corresponde a su DNI es la S, DNI ingresado'+ numero);
+        break;
+        case 16:
+        document.write('La letra que corresponde a su DNI es la Q, DNI ingresado'+ numero);
+        break;
+        case 17:
+        document.write('La letra que corresponde a su DNI es la V, DNI ingresado'+ numero);
+        break;
+        case 18:
+        document.write('La letra que corresponde a su DNI es la H, DNI ingresado'+ numero);
+        break;
+        case 19:
+        document.write('La letra que corresponde a su DNI es la L, DNI ingresado'+ numero);
+        break;
+        case 20:
+        document.write('La letra que corresponde a su DNI es la C, DNI ingresado'+ numero);
+        break;
+        case 21:
+        document.write('La letra que corresponde a su DNI es la K, DNI ingresado'+ numero);
+        break;
+        case 22:
+        document.write('La letra que corresponde a su DNI es la E, DNI ingresado'+ numero);
+        break;
+        default:
+            alert('Ingresaste un opcion erronea')
     }
-
-} while (numero != undefined);
+    }else{
+    
+    }
+    }while(confirm('¿desea ingresar el DNI?'))
