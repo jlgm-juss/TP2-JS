@@ -1,7 +1,7 @@
 //PEDIMOS EL NÚMERO POR TECLADO
 let nrep = prompt("Introduce numero de repeticiones");
 //SI LO INTRODUCIDO ES UN NÚMERO
-if (Number(nrep) == nrep) {
+if (parseInt(nrep) == nrep) {
   //SI ES UN NÚMERO ENTRE 1 Y 50
   if (nrep > 0 && nrep <= 50) {
     let rep, i;
